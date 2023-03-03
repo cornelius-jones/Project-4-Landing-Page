@@ -1,0 +1,48 @@
+.header {
+    background-color: rgb(170, 207, 23);
+    min-height: 50px;
+    display: flex;
+    justify-content: center;    
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-family: 'Heebo', sans-serif;
+    font-size: medium;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-list-item {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 50px;
+    list-style: none;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .section-button {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+  
+  .spacer {
+    height: 30px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .title {
+      font-size: 30px;
+      font-style: bolder;
+    }
+    .nav-list-item {
+      font-size: 14px;
+      margin-right: 8px;
+      margin-top: 5px;
+    }
+  }
