@@ -28,3 +28,10 @@ I started the development phase by reading over the project guidelines to ensure
   
 ## Link
 [Project 4: Landing Page](https://landing.corneliusjones.com)
+
+##Sources
+- George Ingram Codepen examples
+  - https://codepen.io/ivoryblakk/pen/ExeZaZQ
+  - https://codepen.io/ivoryblakk/pen/NWLdqBM
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [Project 4 Walkthrough](https://drive.google.com/file/d/1cEunSFtVIR_lgoKC3N4NNNBh7opQI3Ia/view?usp=share_link)
