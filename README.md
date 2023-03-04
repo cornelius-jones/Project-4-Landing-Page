@@ -29,7 +29,7 @@ I started the development phase by reading over the project guidelines to ensure
 ## Link
 [Project 4: Landing Page](https://landing.corneliusjones.com)
 
-##Sources
+## Sources
 - George Ingram Codepen examples
   - https://codepen.io/ivoryblakk/pen/ExeZaZQ
   - https://codepen.io/ivoryblakk/pen/NWLdqBM
