@@ -26,6 +26,7 @@ body {
     font-family: 'Helvetica', sans-serif;
     color: #fff;
     width: 100%;
+    height: 100%;
 }
 
 .floated {
@@ -154,7 +155,7 @@ nav {
 
 .navbar__menu .menu__link {
     display: block;
-    padding: 2em;
+    padding: 1em;
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
