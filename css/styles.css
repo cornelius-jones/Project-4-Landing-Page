@@ -20,9 +20,9 @@
 
 /* ---- Base Rules ---- */
 body {
-    background: rgb(136, 203, 171);
     background: linear-gradient(0deg, rgb(3, 152, 36) 0%, rgb(170, 207, 23) 100%);
     margin: 0;
+    padding: 0;
     font-family: 'Helvetica', sans-serif;
     color: #fff;
     width: 100%;
@@ -44,8 +44,8 @@ body {
 
 /* Typeography General*/
 h1 {
-    font-size: 7em;
-    margin: 1em 4rem 0em;
+    font-size: 5em;
+    margin: 1.3em 4em 0em 0.7em;
     width: 100%;
 }
 
@@ -79,16 +79,18 @@ p {
     }
 
     .floated {
+        width: 150px;
         border: solid 1px #333;
     }
 
     .floated_r {
+        width: 150px;
         border: solid 1px #333;
     }
 
     h1 {
         font-size: 3em;
-        margin: 1em 4rem 0em;
+        margin: 1em 4em 0em 0.2em;
         width: 100%;
     }
 
@@ -118,7 +120,7 @@ main {
 }
 
 .main-hero {
-    min-height: 40vh;
+    min-height: 30vh;
     padding-top: 3em;
 }
 
@@ -131,10 +133,19 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+nav {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(170, 207, 23);
+    z-index: 1;
+}
+
 .navbar__menu ul {
-    padding-left: 0;
     margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 .navbar__menu li {
@@ -143,7 +154,7 @@ section {
 
 .navbar__menu .menu__link {
     display: block;
-    padding: 1em;
+    padding: 2em;
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -153,7 +164,19 @@ section {
     background: rgb(3, 152, 36);
     color: #fff;
     transition: ease 0.3s all;
-    border: 1px dashed #fff;
+    border: 1px dashed #cc1;
+}
+
+.active_button {
+    display: block;
+    background: rgb(3, 152, 36);
+    text-decoration: none;
+    color: #fff;
+    border: 1px dashed #cc1;
+}
+
+#navbar__list {
+    padding-left: 0px;
 }
 
 /* Header Styles 
@@ -178,58 +201,18 @@ section {
     text-align: center;
 }
 
-#back_to_top {
-    position: relative;
-    left: 89%;
-    bottom: 7%;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    border: 18px solid transparent;
-    border-bottom-color: rgb(136, 203, 171);
-    cursor: pointer;
-    animation-name: arrow-ping;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
-    transition: ease 0.5s;
-}
-
-#back_to_top::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    top: 0;
-    right: 0;
-    transform: translate(50%, -30px);
-    border: 22px solid transparent;
-    border-bottom-color: #051440;
-    cursor: pointer;
-
-}
-
-.back_to_top>a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    z-index: 8;
-}
-
-
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
 .landing__container {
     padding: 1em;
     text-align: left;
     width: 100%;
+    margin: 0px;
 }
 
 @media only screen and (min-width: 35em) {
     .landing__container {
-        max-width: 50em;
+        max-width: 70em;
         padding: 4em;
     }
 }

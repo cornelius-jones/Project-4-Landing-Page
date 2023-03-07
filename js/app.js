@@ -45,12 +45,12 @@ let sec = document.querySelectorAll(".menu__link");
 function makeActive() {
     for (let i = 0; i < sec.length; i++)
 
-        sec[i].classList.remove('active');
-    this.classList.add('active');
+        sec[i].classList.remove('active_button');
+    this.classList.add('active_button');
 
 };
 
-// Set sections as active
+// Set sections to active
 for (let i = 0; i < sec.length; i++)
     sec[i].addEventListener('click', makeActive);
 
@@ -66,23 +66,6 @@ function sectionInViewPort(element) {
     );
 
 };
-
-// Highlight active section
-function activeClass() {
-    for (let section of sections) {
-        if (sectionInViewPort(section)) {
-            if (!section.classList.contains('your-active-class')) {
-                section.classList.add('your-active-class');
-            }
-
-        } else {
-            section.classList.remove('your-active-class');
-
-        };
-    };
-};
-
-document.addEventListener('scroll', activeClass);
 
 // Scroll to each section  
 const secLinks = document.querySelectorAll(".menu__link");
